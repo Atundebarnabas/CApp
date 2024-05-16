@@ -1,11 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Signin | CApp</title>
-</head>
-<body>
+<?php 
+$pageTitle = "SignIn";
+include("../includes/authHead.php");
+?>
+
+<!-- Bulk of Code goes in here -->
   
-</body>
-</html>
+<?php include("../includes/authFoot.php"); ?>
