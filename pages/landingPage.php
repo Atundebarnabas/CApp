@@ -8,10 +8,10 @@
 </head>
 <body>
   <!-- Testing theme color -->
-  <h1 class="testtheme">Testing theme color 1</h1>
-  <h1 class="testtheme">Testing theme color 2</h1>
-  <h1 class="testtheme">Testing theme color 3</h1>
-  <h1 class="testtheme">Testing theme color 4</h1>
-  <h1 class="testtheme">Testing theme color 5</h1>
+  <div class="testtheme">1</div>
+  <div class="testtheme">2</div>
+  <div class="testtheme">3</div>
+  <div class="testtheme">4</div>
+  <div class="testtheme">5</div>
 </body>
 </html>
