@@ -90,6 +90,9 @@ header .right .mobile_menu {
   display: flex;
   align-items: center;
   justify-content: center;
+  animation: comeupanime2 0.3s ease-in forwards;
+  animation-delay: var(--delay);
+  opacity: 0;
 }
 
 .mobile_menu .svg_icon svg {
@@ -149,11 +152,22 @@ main #one .txts {
 @keyframes comeupanime {
   0% {
     opacity: 0.01;
-    transform: translateY(10px);
+    transform: translateY(10px) scale(1.08);
   }
   100% {
     opacity: 1;
-    transform: translateY(0px);
+    transform: translateY(0px) scale(1);
+  }
+}
+
+@keyframes comeupanime2 {
+  0% {
+    opacity: 0.01;
+    transform: translateY(-10px) scale(1.05);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px) scale(1);
   }
 }
 
@@ -184,7 +198,7 @@ main #one .txts {
 
 /* section two */
 main #two {
-  padding: 150px 10px;
+  padding: 10px 10px 150px 10px;
   background-color: white;
   height: auto;
   width: 100%;
@@ -225,6 +239,21 @@ main #two {
     background-position: left;
     background-attachment: initial;
     overflow-y: auto;
+    background: linear-gradient(145deg, rgba(0,0,0,0.4), #000),url("../images/landingBg/b.jpg");
+    background-size: cover;
+    animation: bgpos 0.8s ease-in forwards;
+  }
+  @keyframes bgpos {
+    0% {
+      background-position: 50% -300%;
+    }
+    50% {
+      background-position: 0% 200%;
+      background-attachment: fixed;
+    }
+    100% {
+      background-position: left;
+    }
   }
   header {
     padding: 40px 20px;
@@ -247,10 +276,13 @@ main #two {
     width: 80%;
     height: auto;
     justify-content: center;
-    backdrop-filter: blur(18px);
-    background: rgba(255, 255, 255, .08);
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, .10);
     border-radius: 30px;
     padding: 12px 10px;
+    animation: comeupanime2 0.3s ease-in forwards;
+    animation-delay: var(--delay);
+    opacity: 0;
   }
   .desktopmenu ul {
     display: flex;
@@ -278,6 +310,18 @@ main #two {
     color: #eee;
     font-size: 0.95rem;
     cursor: pointer;
+  }
+
+  .desktopmenu ul .first li {
+    animation: comeupanime 0.3s ease-in forwards;
+    animation-delay: var(--delay);
+    opacity: 0;
+  }
+
+  .desktopmenu ul .last li {
+    animation: comeupanime2 0.3s ease-in forwards;
+    animation-delay: var(--delay);
+    opacity: 0;
   }
 
   /* Mobile menu */
@@ -317,7 +361,8 @@ main #two {
     background-position: bottom;
   }
   .desktopmenu ul li {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
+    font-weight: 500;
   }
   main {
     padding: 100px 0px;
@@ -353,10 +398,11 @@ main #two {
     padding: 0px 20px 180px 20px;
   }
   main #one .txts {
-    width: 700px;
+    width: 900px;
   }
   .main_txt p {
-    font-size: 3rem;
+    font-size: 4rem;
+    font-weight: 600;
   }
   .main_txt p.exp {
     font-size: 2rem;

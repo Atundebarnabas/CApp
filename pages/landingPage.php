@@ -13,24 +13,24 @@
       <div class="icon webApp_icon"></div>
     </div>
     <div class="right">
-      <div class="menu desktopmenu">
+      <div class="menu desktopmenu" style="--delay: 0.5s;">
         <ul>
           <div class="first">
-            <li class="active">Lorem</li>
-            <li>Lorem</li>
-            <li>Lorem</li>
-            <li>Lorem</li>
-            <li>Lorem</li>
+            <li class="active" style="--delay: 0.8s;">Home</li>
+            <li style="--delay: 1s;">Blog</li>
+            <li style="--delay: 1.2s;">Contact</li>
+            <li style="--delay: 1.3s;">About</li>
+            <li style="--delay: 1.5s;">Discover</li>
           </div>
           <div class="last">
-            <li>lorem</li>
-            <li class="update">lorem</li>
+            <li style="--delay: 1.7s;">Videos</li>
+            <li class="update" style="--delay: 2.0s;">Updates</li>
           </div>
         </ul>
       </div>
       <div class="menu mobile_menu icons">
         <div class="search icon">
-          <div class="svg_icon">
+          <div class="svg_icon" style="--delay: 1s;">
             <!-- Title: “Search Alt SVG Vector”
               Author: “Dazzle UI“— https://www.svgrepo.com/author/Dazzle%20UI/
               Source: “svgrepo.com“— https://www.svgrepo.com/
@@ -50,7 +50,7 @@
           </div>
         </div>
         <div class="hambuger_menu mobilemenu icon">
-          <div class="svg_icon">
+          <div class="svg_icon" style="--delay: 1.4s;">
             <!-- Title: “Menu Hambuger SVG Vector”
               Author: “basicons“— https://www.svgrepo.com/author/basicons/
               Source: “svgrepo.com“— https://www.svgrepo.com/
@@ -71,14 +71,14 @@
     <section id="one">
       <div class="txts">
         <div class="main_txt txt">
-          <p class="exp"  style="--delay: 0.4s;">Unleash</p> <p style="--delay: 0.8s;">Creativity:</p> <p style="--delay: 1s;">Explore •</p> <p class="exp" style="--delay: 1.2s;"> Create </p> <p style="--delay: 1.4s;">• Innovate</p>
+          <p class="exp"  style="--delay: 0.9s;">Unleash</p> <p style="--delay: 1s;">Creativity</p><br><br> <p style="--delay: 1.3s;">Explore •</p> <p style="--delay: 1.5s;"> Create </p> <p style="--delay: 1.8s;">• Innovate</p>
         </div>
         <div class="sub_txt txt">
-          <p style="--delay: 2s;">Empowering Creativity: Embark on Your Journey to Inspired Expression and Unleash Your Unique Potential with Our App Today.</p>
+          <p style="--delay: 2.0s;">Empowering Creativity: Embark on Your Journey to Inspired Expression and Unleash Your Unique Potential with Our App Today.</p>
         </div>
       </div>
       <div class="get_started">
-        <button style="--delay: 2.8s;" type="button">Get Started</button>
+        <button style="--delay: 2.3s;" type="button">Get Started</button>
       </div>
     </section>
     <section id="two">
