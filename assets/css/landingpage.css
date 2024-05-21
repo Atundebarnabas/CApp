@@ -285,7 +285,7 @@ main #two {
   transform: scale(0.9);
 }
 
-.grid_layout_columns .img_container.not-mobile {
+.grid_layout_columns .img_container.not-mobile, .grid_layout_columns.not-mobile {
   display: none;
 }
 
@@ -376,7 +376,7 @@ main #two {
 
 .content-to-animate {
   opacity: 0;
-	transition: all 1s ease-in;
+	transition: all 0.5s ease-out;
 	transform: translateX(-10%);
 }
 
@@ -400,14 +400,29 @@ main #two {
   border-radius: 30px;
   background: var(--theme-grad-color4);
   border: none;
-  color: var(--light-theme);
-  font-family: 'Poppins', sans-serif;
-  font-weight: 550;
-  font-size: 0.94rem;
   opacity: 0;
   animation: comeupanime 0.3s ease-in forwards;
   animation-delay: var(--delay);
   cursor: pointer;
+  transition: background 0.6s ease-in;
+}
+
+.get_started button span {
+  color: var(--light-theme);
+  font-family: 'Poppins', sans-serif;
+  font-weight: 550;
+  font-size: 0.95rem;
+}
+
+.get_started button:hover {
+  background: var(--light-theme);
+  transform: scale(1.05);
+}
+
+.get_started button:hover span {
+  background: var(--theme-grad-color4);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
 }
 
 .color-out {
@@ -418,6 +433,73 @@ main #two {
 .color-out.bordered {
   border-radius: 8px;
 }
+
+.t_platform_container {
+  flex-direction: row !important;
+  flex-wrap: wrap;
+}
+
+.t_platform_container .platform  {
+  width: fit-content;
+  /* background: orangered; */
+  height: auto;
+  margin-bottom: 6px;
+}
+
+.platform button {
+  width: 100%;
+  display: flex;
+  height: auto;
+  padding: 3px 22px;
+  background: var(--light-theme);
+  border-radius: 21px;
+  align-items: center;
+  border: 1px solid var(--light-shade1);
+  justify-content: center;
+  gap: 5px;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.platform button:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 3px 10px rgba(8 8 8 / 12%);
+}
+
+.platform button .platform_icon {
+  height: auto;
+  width: 10px;
+  padding: 20px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.platform_icon svg {
+  height: 70%;
+  width: 70%;
+  position: absolute;
+}
+
+.platform button .platform_name {
+  /* background: red; */
+  display: flex;
+  align-items: center;
+}
+
+.platform_name span {
+  font-size: 1rem;
+  font-weight: 450;
+  color: var(--dark-shade3);
+}
+
+.express_idea ul li p.dwn_txt {
+  font-size: 2.1rem;
+  margin-bottom: 20px;
+}
+#two .body .express_idea.dwn_sec {border-top: none}
 
 @media (min-width: 480px){}
 
@@ -499,7 +581,7 @@ main #two {
     color: #eee;
     font-size: 0.95rem;
     cursor: pointer;
-    padding: 5px 12px;
+    padding: 5px 15px;
     border-radius: 22px;
   }
 
@@ -518,7 +600,7 @@ main #two {
     background: red;
     display: block;
     position: absolute;
-    right: -15px;
+    right: 0px;
     border-radius: 50%;
     top: 0;
   }
@@ -643,7 +725,7 @@ main #two {
   .grid_layout_columns .img_container {
     margin-bottom: 10px;
   }
-  .grid_layout_columns .img_container.not-mobile {
+  .grid_layout_columns .img_container.not-mobile, .grid_layout_columns.not-mobile {
     display: block;
   }
   
@@ -671,6 +753,17 @@ main #two {
   .get_started button {
     padding: 17px 20px;
     width: 200px;
+  }
+  .get_started button span {
     font-size: 1.1rem;
+  }
+  .platform_name span {
+    font-size: 1.13rem;
+    font-weight: 450;
+    color: var(--dark-shade3);
+  }
+
+  .express_idea ul li p.dwn_txt {
+    font-size: 3.2rem;
   }
 }
